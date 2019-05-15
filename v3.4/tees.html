@@ -1,0 +1,98 @@
+<!-- Homework 7 - Group Project - tees.html -->
+<!-- Brian Merrill, Michael Connor, Jordan Dorsett, Brendan Pierson, and William Wells -->
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+	<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
+	integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" 
+	crossorigin="anonymous">
+	<link href = 'https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel = 'stylesheet' type = 'text/css'>
+	
+	<!-- Display browser tab title -->
+	<title>H-Tee-ML - About Us</title>
+	
+	<!-- call JavaScript file to change shirt colors -->
+	<script src = "teeColor.js"></script>
+
+	<!-- Set style parameters for body elements -->
+	<style type = "text/css">            
+		/* Menu bar style */
+		ul { list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #333; }
+
+		li { float: left; }
+
+		li a { display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none; }
+
+		li a:hover:not(.active) 
+		{ background-color: #111; }
+
+		.active 
+		{ background-color: #4CAF50; }
+
+				
+
+		/* background container styling */
+		.container { width: 744px; }
+
+		/* paragraph styling */
+		p {
+                   padding: 20px;
+                }
+                   
+	</style>
+		</head>
+		
+		<body>
+			<!-- Menu bar -->
+			<ul class = "bar">
+				<li class = "bar"><a href = "home.html">Home</a></li>
+				<li class = "bar"><a class = "active" href = "tees.html">Tees</a></li>
+				<li class = "bar"><a href = "otherapparel.html">Other Apparel</a></li>
+				<li class = "bar" style = "float:right"><a href = "about.html">About Us</a></li>
+			</ul>
+
+			<!-- Tees go here -->
+			
+			<!-- Select color options -->
+			<form action = "#">
+				<p>Choose from our selection of colors:
+					<input id = "teeBlue" type = "button" value = "Blue" style="color: blue; width: 75px; height: 35px;"> 
+					<input id = "teeGray" type = "button" value = "Gray" style="color: gray;width: 75px; height: 35px;"> 
+					<input id = "teeRed" type = "button" value = "Red" style="color: red;width: 75px; height: 35px;"> 
+					<input id = "teeWhite" type = "button" value = "White" style="color: #ffffff; width: 75px; height: 35px;"></p>
+			</form>
+                        <div style="padding: 20px">
+			    <button id = "shirt-button">Click to swap</button>
+                        </div>
+				<!-- Demo color change in shirt -->
+				<div id = "container" class = "container">
+					<img id = "shirt" src = "trbodyfront.png" height = "654" style = "display: block">
+				</div>
+
+				
+
+				<!-- Alternate Front to Back of T-shirt images -->
+				<script>
+					var showingFront = true;
+					document.getElementById("shirt-button").addEventListener("click", 
+						function(){ showingFront = !showingFront
+							document.getElementById("shirt").src = showingFront ?
+							"trbodyfront.png" : "trbodyback.png" })
+						</script>
+						
+						<!-- Set link back to homepage -->
+						<div class ="row text-center"><a class="btn btn-primary" href="home.html" role="button">HOME</a></div>	
+						</body>
+						</html>

@@ -1,0 +1,83 @@
+<!-- Homework 7 - Group 2 Project - home.html -->
+<!-- Brian Merrill, Michael Connor, Jordan Dorsett, Brendan Pierson, and William Wells -->
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+	<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
+	integrity = "sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" 
+	crossorigin = "anonymous">
+	<link href = 'https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel = 'stylesheet' type = 'text/css'>
+
+	<!-- Display browser tab title -->
+	<title>H-Tee-ML - Home</title>
+
+	<!-- Set style parameters for body elements -->
+	<style type = "text/css">           
+		/* Menu bar style */
+		ul { list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #333; }
+
+			li { float: left; }
+
+			li a { display: block;
+				color: white;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none; }
+
+				li a:hover:not(.active)
+				{ background-color: #111; }
+
+				.active 
+				{ background-color: #4CAF50; }
+
+				/* Content Styling */
+				p { font-family: 'Roboto', sans-serif;
+				text-align: center;
+				font-weight: bold; }
+
+				p.title { font-size: 80px;
+					font-weight: bolder; }
+
+					p.subtitle { font-size: 40px; } 
+
+					/* img Styling */
+					.center { display: block;
+						margin-left: auto;
+						margin-right: auto;
+						width: 20%; }
+					</style>
+				</head>
+				
+				<body>      
+					<!-- Menu bar -->
+					<ul class = "bar">
+						<li class = "bar"><a class = "active" href = "home.html">Home</a></li>
+						<li class = "bar"><a href = "tees.html">Tees</a></li>
+						<li class = "bar"><a href = "otherapparel.html">Other Apparel</a></li>
+						<li class = "bar" style = "float:right"><a href = "about.html">About Us</a></li>
+					</ul>
+
+					<!-- Content goes here -->
+					<p class = "title">&ltH-Tee-ML&gt</p>
+
+					<!-- Display shirt image -->
+					<img src = "whitebody.png" alt = "Body Tee" class = "center" width = "372" height = "327">
+
+					<!-- Display homepage intro -->
+					<p class = "subtitle">Tag yourself!</p>
+					<p>We have been providing high-quality tees to the programming community since 2019. 
+					Our goal is to make people look good no matter their attributes.</p>
+					<p>Put on one of our shirts to show the world your style goes beyond cascading sheets!</p>
+
+					<!-- Set link to tees page -->
+					<p><a href = "tees.html">CLICK HERE TO SEE MORE OF OUR TEES!</a></p>
+				</body>
+				</html>
